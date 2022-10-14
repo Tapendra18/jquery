@@ -17,9 +17,9 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.SubHeading').submit(function(event){
         event.preventDefault();
-        var subheading = $('.subheadingval').val();
-        console.log(subheading);
-        $("main").append("<div><h3>"+subheading+"</h3></div>");   
+        // var subheading = $('.subheadingval').val();
+        // console.log(subheading);
+        // $("main").append("<div><h3>"+subheading+"</h3></div>");   
     })
 })
 
