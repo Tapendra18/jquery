@@ -30,8 +30,8 @@
                     <div class="modal-header">
                         <form class="heading" id="formtogle">
                             <h5 class="modal-title" id="exampleModalLabel">heading</h5>
-                            <input type="text" class="header" placeholder="enter" />
-                            <button type="submit" class="btn btn-primary">save</button>
+                            <input type="text" class="header mt-4" placeholder="enter" />
+                            <button type="submit" class="btn btn-primary ">save</button>
                         </form>
                     </div>
                 </div>
@@ -44,19 +44,25 @@
         </button>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <form>
-                        <input type="text" placeholder="enter " />
+                <div class="modal-content">               
+                    <form class="SubHeading" id="formtogle">
+                        <h5 class="modal-title" id="exampleModalLabel">Sub heading</h5>
+                        <div class="input-group mb-3">
+                            <select class="SubHeadingValue w-100" id="inputGroupSelect01">
+                              <option class="headingdata" selected></option>
+                            </select>
+                          </div>                                          
+                        <input class="subheadingval" type="text" placeholder="enter"/>
                         <button type="submit" class="btn btn-primary">Save changes</button>
                     </form>
                 </div>
             </div>
         </div>
+
+
+
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
             form
         </button>
