@@ -1,36 +1,51 @@
-
-
-
 $(document).ready(function(){
     $('.heading').submit(function(event){
         event.preventDefault();
-       var heading =  $(".header").val();
+
+       var heading = $(".header").val();
        console.log(heading);
        $("main").append("<section><h1>"+heading+"</h1></section>");
         $("#exampleModal1").modal('toggle');
-        $(".SubHeadingValue").append("<option><h1>"+heading+"</h1></option>");
+        $(".SubHeadingselectValue").append("<option><h1>"+heading+"</h1></option>");
         
+        $("main section h1").each(function (index){
+            var indx = index + 1;
+            console.log(indx)
+            var txtval = $(this).text();
+            console.log(txtval)
+           
+        }) 
         
-        // $("#exampleModal1").modal('toggle');
     })
 })
 
 $(document).ready(function(){
     $('.SubHeading').submit(function(event){
         event.preventDefault();
-        var subheading = $('.subheadingval').val();
+        var subheading = $('.subheadinginputval').val();
         console.log(subheading);
         $("section").append("<div><h3>"+subheading+"</h3></div>"); 
         $("h3").css({
             "margin-left":"20px"
             });
-        // $(".formValue").append("<option><h1>"+formvalue+"</h1></option>");
+        $(".formselectValue").append("<option><h1>"+subheading+"</h1></option>");
 
     })
 })
 
-// $(".heading").submit(function(event){
-//        event.preventDefault();
-//     var heading = $("input[name='heading']",this.val());
-//     $("main").append("<section><h1>"+heading+"</h1></section");
-// })
+$(document).ready(function(){
+    $('.formheading').submit(function(event){
+        event.preventDefault();
+        var Formheading = $('.forminputvalue').val();
+        console.log(Formheading);   
+        $("main").append("<div><p>"+Formheading+"</p></div>")
+        $('p').css({
+            "margin-left":"35px",
+            "font-size":"40px"
+        })     
+
+    })
+
+
+
+})
