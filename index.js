@@ -8,13 +8,15 @@ $(document).ready(function(){
         $("#exampleModal1").modal('toggle');
         $(".SubHeadingselectValue").append("<option><h1>"+heading+"</h1></option>");
         
-        $("main section h1").each(function (index){
-            var indx = index + 1;
-            console.log(indx)
-            var txtval = $(this).text();
-            console.log(txtval)
+
+
+        // $("main section h1").each(function (index){
+        //     var indx = index + 1;
+        //     console.log(indx)
+        //     var txtval = $(this).text();
+        //     console.log(txtval)
            
-        }) 
+        // }) 
         
     })
 })
